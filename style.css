@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background: url('imagens/grill-background-barbecue-fire-grill-close-up-isolated-black-background.jpg') no-repeat center center fixed;
+    background-image: url('imagens/grill-background-barbecue-fire-grill-close-up-isolated-black-background.jpg');
     background-size: cover;
     display: flex;
     justify-content: center;
