@@ -6,42 +6,25 @@ function calcular(event) {
     const mulheres = parseInt(document.getElementById('mulheres').value);
     const criancas = parseInt(document.getElementById('criancas').value);
 
-    const carneHomens = homens * 500;
-    const carneMulheres = mulheres * 300;
-    const carneCriancas = criancas * 200;
-    const carneTotal = carneHomens + carneMulheres + carneCriancas;
 
-    const frangoHomens = homens * 200;
-    const frangoMulheres = mulheres * 200;
-    const frangoCriancas = criancas * 100;
-    const frangoTotal = frangoHomens + frangoMulheres + frangoCriancas;
+    const carne = (homens * 500) + (mulheres * 300) + (criancas * 200);
+    const frango = (homens * 200) + (mulheres * 200) + (criancas * 100);
+    const linguica = (homens * 200) + (mulheres * 200) + (criancas * 200);
+    const refrigerante = (homens * 300) + (mulheres * 400) + (criancas * 200);
+    const cerveja = (homens * 800) + (mulheres * 500);
 
-    const linguicaHomens = homens * 200;
-    const linguicaMulheres = mulheres * 200;
-    const linguicaCriancas = criancas * 200;
-    const linguicaTotal = linguicaHomens + linguicaMulheres + linguicaCriancas;
-
-    const refrigeranteHomens = homens * 300;
-    const refrigeranteMulheres = mulheres * 400;
-    const refrigeranteCriancas = criancas * 200;
-    const refrigeranteTotal = refrigeranteHomens + refrigeranteMulheres + refrigeranteCriancas;
-
-    const cervejaHomens = homens * 800;
-    const cervejaMulheres = mulheres * 500;
-    const cervejaTotal = cervejaHomens + cervejaMulheres;
-
-    const carneTotalKg = (carneTotal / 1000).toFixed(2);
-    const frangoTotalKg = (frangoTotal / 1000).toFixed(2);
-    const linguicaTotalKg = (linguicaTotal / 1000).toFixed(2);
-    const refrigeranteTotalL = (refrigeranteTotal / 1000).toFixed(2);
-    const cervejaTotalL = (cervejaTotal / 1000).toFixed(2);
+    const carneKg = (carne / 1000).toFixed(2);
+    const frangoKg = (frango / 1000).toFixed(2);
+    const linguicaKg = (linguica / 1000).toFixed(2);
+    const refrigeranteL = (refrigerante / 1000).toFixed(2);
+    const cervejaL = (cerveja / 1000).toFixed(2);
 
     document.getElementById('resultado').innerHTML = `
-        <p>Carne: ${carneTotalKg}kg</p>
-        <p>Frango: ${frangoTotalKg}kg</p>
-        <p>Linguiça: ${linguicaTotalKg}kg</p>
-        <p>Refrigerante: ${refrigeranteTotalL}l</p>
-        <p>Cerveja: ${cervejaTotalL}l</p>
+        <p>Carne: ${carneKg}kg</p>
+        <p>Frango: ${frangoKg}kg</p>
+        <p>Linguiça: ${linguicaKg}kg</p>
+        <p>Refrigerante: ${refrigeranteL}l</p>
+        <p>Cerveja: ${cervejaL}l</p>
     `;
 }
 const form = document.getElementById("churrascoForm");
